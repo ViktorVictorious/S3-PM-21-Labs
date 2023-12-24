@@ -1,0 +1,37 @@
+body { 
+  display: grid;
+  grid-template-areas: 
+    "sidebar header header header"
+    "sidebar announcement announcement calendar"
+    "sidebar message course ads";
+  grid-template-rows: 60px 1fr 1fr;
+  grid-template-columns: 20% 1fr 1fr 20%;
+  grid-gap: 10px;
+  height: 100vh;
+  margin: 0;
+  }
+header, message, announcement, sidebar, div, calendar, course {
+  padding: 20px;
+  background: lightblue;
+}
+#pageHeader {
+  grid-area: header;
+}
+#pageMessage {
+  grid-area: message;
+}
+#pageCourse {
+  grid-area: course;
+}
+#mainAnnouncement { 
+  grid-area: announcement;      
+  }
+#mainNav { 
+  grid-area: sidebar; 
+  }
+#siteAds { 
+  grid-area: ads; 
+  }
+#mainCal { 
+  grid-area: calendar; 
+  }
